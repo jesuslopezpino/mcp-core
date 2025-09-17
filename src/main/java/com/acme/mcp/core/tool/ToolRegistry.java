@@ -18,12 +18,34 @@ public class ToolRegistry {
      * Register a tool in the registry.
      * @param tool the tool to register
      * @throws IllegalArgumentException if tool name is null or empty
+     * @throws IllegalStateException if tool name or alias conflicts with existing registration
      */
     public void register(Tool tool) {
         if (tool == null || tool.getName() == null || tool.getName().trim().isEmpty()) {
             throw new IllegalArgumentException("Tool name cannot be null or empty");
         }
-        tools.put(tool.getName(), tool);
+        
+        String toolName = tool.getName();
+        
+        // Check for conflicts with main name
+        if (tools.containsKey(toolName)) {
+            throw new IllegalStateException("Tool name '" + toolName + "' is already registered");
+        }
+        
+        // Check for conflicts with aliases
+        for (String alias : tool.aliases()) {
+            if (tools.containsKey(alias)) {
+                throw new IllegalStateException("Tool alias '" + alias + "' is already registered");
+            }
+        }
+        
+        // Register main name
+        tools.put(toolName, tool);
+        
+        // Register aliases
+        for (String alias : tool.aliases()) {
+            tools.put(alias, tool);
+        }
     }
     
     /**
@@ -37,10 +59,12 @@ public class ToolRegistry {
     
     /**
      * Get all registered tools.
-     * @return unmodifiable collection of all tools
+     * @return unmodifiable collection of all unique tools
      */
     public Collection<Tool> list() {
-        return Collections.unmodifiableCollection(tools.values());
+        return Collections.unmodifiableCollection(tools.values().stream()
+            .distinct()
+            .collect(java.util.stream.Collectors.toList()));
     }
     
     /**

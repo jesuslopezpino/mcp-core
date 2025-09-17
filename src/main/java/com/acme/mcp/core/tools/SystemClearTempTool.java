@@ -10,43 +10,32 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Tool to reset network configuration on Windows systems.
- * Executes network reset commands to resolve connectivity issues.
+ * Tool to clear temporary files from system and user temp directories.
  */
-public class SystemResetNetworkTool extends PowerShellToolBase {
+public class SystemClearTempTool extends PowerShellToolBase {
     
-    private static final String TOOL_NAME = "system.reset_network";
-    private static final String TOOL_DESCRIPTION = "Reset network configuration to resolve connectivity issues";
+    private static final String TOOL_NAME = "system.clear_temp";
+    private static final String TOOL_DESCRIPTION = "Clear temporary files from system and user temp directories";
     private static final List<String> OS_SUPPORT = List.of("windows");
     
-    private final ObjectMapper objectMapper;
-    
-    public SystemResetNetworkTool() {
+    public SystemClearTempTool() {
         super(TOOL_NAME, TOOL_DESCRIPTION, true, OS_SUPPORT, createJsonSchema());
-        this.objectMapper = new ObjectMapper();
     }
     
     /**
      * Constructor for testing with custom PowerShellRunner.
      */
-    public SystemResetNetworkTool(PowerShellRunner powerShellRunner, Allowlist allowlist) {
+    public SystemClearTempTool(PowerShellRunner powerShellRunner, Allowlist allowlist) {
         super(TOOL_NAME, TOOL_DESCRIPTION, true, OS_SUPPORT, createJsonSchema(), powerShellRunner, allowlist);
-        this.objectMapper = new ObjectMapper();
-    }
-    
-    @Override
-    public List<String> aliases() {
-        return List.of("system_reset_network");
     }
     
     @Override
     public ExecuteResult execute(ExecutionContext context, JsonNode args) {
-        // This tool doesn't require parameters, so no validation needed
+        // This tool doesn't require parameters
         
         List<String> commands = List.of(
-            "ipconfig /flushdns",
-            "netsh winsock reset",
-            "netsh int ip reset"
+            "Remove-Item -Recurse -Force \"$env:TEMP\\*\"",
+            "Remove-Item -Recurse -Force \"C:\\Windows\\Temp\\*\""
         );
         
         return runPs(commands, context, Map.of());

@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "../mcp-admin-ui"
+		},
+		{
+			"path": "../mcp-infra"
+		},
+		{
+			"path": "../mcp-recipes"
+		},
+		{
+			"path": "../mcp-windows-agent"
+		},
+		{
+			"path": "../mcp-controller"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}

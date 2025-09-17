@@ -11,6 +11,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Executes PowerShell commands on Windows systems.
  * Uses secure execution policy and no profile for consistent behavior.
+ * Supports timeout configuration and dry-run mode for testing.
  */
 public class PowerShellRunner {
     
@@ -21,6 +22,26 @@ public class PowerShellRunner {
         "-Command"
     };
     
+    private final int timeoutSeconds;
+    private final boolean dryRun;
+    
+    /**
+     * Create PowerShellRunner with default settings (120s timeout, no dry-run).
+     */
+    public PowerShellRunner() {
+        this(120, false);
+    }
+    
+    /**
+     * Create PowerShellRunner with custom settings.
+     * @param timeoutSeconds timeout in seconds for command execution
+     * @param dryRun if true, commands are not executed but audited
+     */
+    public PowerShellRunner(int timeoutSeconds, boolean dryRun) {
+        this.timeoutSeconds = timeoutSeconds;
+        this.dryRun = dryRun;
+    }
+    
     /**
      * Execute a PowerShell command.
      * @param command the PowerShell command to execute
@@ -28,6 +49,11 @@ public class PowerShellRunner {
      */
     public ExecuteResult execute(String command) {
         String executionId = UUID.randomUUID().toString();
+        
+        // Handle dry-run mode
+        if (dryRun) {
+            return new ExecuteResult(executionId, 0, "DRY_RUN", "", ExecuteResult.Status.SUCCESS);
+        }
         
         try {
             ProcessBuilder processBuilder = new ProcessBuilder();
@@ -40,8 +66,8 @@ public class PowerShellRunner {
             String stdout = IOUtils.toString(process.getInputStream(), StandardCharsets.UTF_8);
             String stderr = IOUtils.toString(process.getErrorStream(), StandardCharsets.UTF_8);
             
-            // Wait for process completion with timeout
-            boolean finished = process.waitFor(30, TimeUnit.SECONDS);
+            // Wait for process completion with configurable timeout
+            boolean finished = process.waitFor(timeoutSeconds, TimeUnit.SECONDS);
             int exitCode = finished ? process.exitValue() : -1;
             
             ExecuteResult.Status status;

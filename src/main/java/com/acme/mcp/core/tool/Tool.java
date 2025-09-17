@@ -46,4 +46,12 @@ public interface Tool {
      * @return execution result
      */
     ExecuteResult execute(ExecutionContext context, JsonNode args);
+    
+    /**
+     * Get alternative names (aliases) for this tool.
+     * @return list of alias names (empty by default)
+     */
+    default List<String> aliases() {
+        return List.of();
+    }
 }

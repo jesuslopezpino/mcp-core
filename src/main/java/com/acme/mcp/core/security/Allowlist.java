@@ -27,7 +27,14 @@ public class Allowlist {
         "Copy-Item",
         "New-Item",
         "Set-ExecutionPolicy",
-        "taskkill"
+        "taskkill",
+        "Write-Host",
+        "Get-WmiObject",
+        "Get-Date",
+        "Where-Object",
+        "Select-Object",
+        "ForEach-Object",
+        "Start-Sleep"
     );
     
     /**

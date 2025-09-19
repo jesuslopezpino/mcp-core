@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.acme.mcp.core.tool.PowerShellToolBaseTest" time="0.795" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.acme.mcp.core.tool.PowerShellToolBaseTest" time="0.837" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\jesus\AppData\Local\Temp\surefire18443777812835675875\surefirebooter-20250919234712898_3.jar C:\Users\jesus\AppData\Local\Temp\surefire18443777812835675875 2025-09-19T23-47-12_341-jvmRun1 surefire-20250919234712898_1tmp surefire_0-20250919234712898_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\jesus\AppData\Local\Temp\surefire3462440362264080283\surefirebooter-20250919235020319_3.jar C:\Users\jesus\AppData\Local\Temp\surefire3462440362264080283 2025-09-19T23-50-19_919-jvmRun1 surefire-20250919235020319_1tmp surefire_0-20250919235020319_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\jesus\CursorProjects\mcp-core\target\test-classes;C:\Users\jesus\CursorProjects\mcp-core\target\classes;C:\Users\jesus\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.16.1\jackson-databind-2.16.1.jar;C:\Users\jesus\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.16.1\jackson-annotations-2.16.1.jar;C:\Users\jesus\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.16.1\jackson-core-2.16.1.jar;C:\Users\jesus\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\jesus\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\jesus\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\jesus\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\jesus\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.1\junit-jupiter-5.10.1.jar;C:\Users\jesus\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.1\junit-jupiter-api-5.10.1.jar;C:\Users\jesus\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\jesus\.m2\repository\org\junit\platform\junit-platform-commons\1.10.1\junit-platform-commons-1.10.1.jar;C:\Users\jesus\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\jesus\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.1\junit-jupiter-params-5.10.1.jar;C:\Users\jesus\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.1\junit-jupiter-engine-5.10.1.jar;C:\Users\jesus\.m2\repository\org\junit\platform\junit-platform-engine\1.10.1\junit-platform-engine-1.10.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\jesus\AppData\Local\Temp\surefire18443777812835675875\surefirebooter-20250919234712898_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\jesus\AppData\Local\Temp\surefire3462440362264080283\surefirebooter-20250919235020319_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.11+7-LTS-207"/>
@@ -56,57 +56,57 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testToolProperties" classname="com.acme.mcp.core.tool.PowerShellToolBaseTest" time="0.203"/>
-  <testcase name="testValidationError" classname="com.acme.mcp.core.tool.PowerShellToolBaseTest" time="0.465">
-    <system-out><![CDATA[23:47:14,605 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.4.14
-23:47:14,607 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4372b9b6 - No custom configurators were discovered as a service.
-23:47:14,607 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4372b9b6 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
-23:47:14,612 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4372b9b6 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
-23:47:14,626 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
-23:47:14,626 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
-23:47:14,643 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4372b9b6 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 15 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
-23:47:14,643 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4372b9b6 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
-23:47:14,644 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4372b9b6 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
-23:47:14,644 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
-23:47:14,651 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/C:/Users/jesus/CursorProjects/mcp-core/target/classes/logback.xml]
-23:47:14,822 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
-23:47:14,822 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
-23:47:14,834 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
-23:47:14,885 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [AUDIT_CONSOLE]
-23:47:14,885 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
-23:47:14,885 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
-23:47:14,885 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [AUDIT_FILE]
-23:47:14,885 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
-23:47:14,901 |-WARN in ch.qos.logback.core.model.processor.ImplicitModelHandler - Ignoring unknown property [maxFileSize] in [ch.qos.logback.core.rolling.TimeBasedRollingPolicy]
-23:47:14,905 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@589987187 - No compression will be used
-23:47:14,907 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@589987187 - Will use the pattern logs/audit.%d{yyyy-MM-dd}.%i.log for the active file
-23:47:14,917 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern 'logs/audit.%d{yyyy-MM-dd}.%i.log'.
-23:47:14,917 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
-23:47:14,919 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to 2025-09-19T21:47:14.918Z
-23:47:14,920 |-ERROR in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Filename pattern [logs/audit.%d{yyyy-MM-dd}.%i.log] contains an integer token converter, i.e. %i, INCOMPATIBLE with this configuration. Remove it.
-23:47:14,920 |-WARN in c.q.l.core.rolling.TimeBasedRollingPolicy@589987187 - Subcomponent did not start. TimeBasedRollingPolicy will not start.
-23:47:14,920 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
-23:47:14,921 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[AUDIT_FILE] - TriggeringPolicy has not started. RollingFileAppender will not start
-23:47:14,922 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [AUDIT] to INFO
-23:47:14,931 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [AUDIT] to false
-23:47:14,932 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [AUDIT_CONSOLE] to Logger[AUDIT]
-23:47:14,933 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [AUDIT_FILE] to Logger[AUDIT]
-23:47:14,934 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
-23:47:14,934 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
-23:47:14,934 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@40844aab - End of configuration.
-23:47:14,936 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@1f6c9cd8 - Registering current configuration as safe fallback point
-23:47:14,936 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4372b9b6 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 292 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+  <testcase name="testToolProperties" classname="com.acme.mcp.core.tool.PowerShellToolBaseTest" time="0.269"/>
+  <testcase name="testValidationError" classname="com.acme.mcp.core.tool.PowerShellToolBaseTest" time="0.432">
+    <system-out><![CDATA[23:50:21,903 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.4.14
+23:50:21,905 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4372b9b6 - No custom configurators were discovered as a service.
+23:50:21,906 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4372b9b6 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+23:50:21,906 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4372b9b6 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+23:50:21,916 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+23:50:21,917 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+23:50:21,925 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4372b9b6 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 11 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+23:50:21,925 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4372b9b6 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+23:50:21,926 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4372b9b6 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+23:50:21,928 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+23:50:21,934 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/C:/Users/jesus/CursorProjects/mcp-core/target/classes/logback.xml]
+23:50:22,095 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+23:50:22,095 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+23:50:22,107 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+23:50:22,168 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [AUDIT_CONSOLE]
+23:50:22,168 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+23:50:22,169 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+23:50:22,170 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [AUDIT_FILE]
+23:50:22,170 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+23:50:22,182 |-WARN in ch.qos.logback.core.model.processor.ImplicitModelHandler - Ignoring unknown property [maxFileSize] in [ch.qos.logback.core.rolling.TimeBasedRollingPolicy]
+23:50:22,191 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@589987187 - No compression will be used
+23:50:22,195 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@589987187 - Will use the pattern logs/audit.%d{yyyy-MM-dd}.%i.log for the active file
+23:50:22,204 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern 'logs/audit.%d{yyyy-MM-dd}.%i.log'.
+23:50:22,204 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+23:50:22,205 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to 2025-09-19T21:50:22.205Z
+23:50:22,207 |-ERROR in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Filename pattern [logs/audit.%d{yyyy-MM-dd}.%i.log] contains an integer token converter, i.e. %i, INCOMPATIBLE with this configuration. Remove it.
+23:50:22,207 |-WARN in c.q.l.core.rolling.TimeBasedRollingPolicy@589987187 - Subcomponent did not start. TimeBasedRollingPolicy will not start.
+23:50:22,208 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+23:50:22,208 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[AUDIT_FILE] - TriggeringPolicy has not started. RollingFileAppender will not start
+23:50:22,210 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [AUDIT] to INFO
+23:50:22,219 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [AUDIT] to false
+23:50:22,220 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [AUDIT_CONSOLE] to Logger[AUDIT]
+23:50:22,221 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [AUDIT_FILE] to Logger[AUDIT]
+23:50:22,221 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+23:50:22,221 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+23:50:22,221 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@40844aab - End of configuration.
+23:50:22,223 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@1f6c9cd8 - Registering current configuration as safe fallback point
+23:50:22,223 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4372b9b6 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 297 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
 
-{"event":"tool_validation_error","timestamp":1758318434947,"tool":"test.tool","providedFields":"[[]]","missingField":"requiredField"}
+{"event":"tool_validation_error","timestamp":1758318622234,"tool":"test.tool","missingField":"requiredField","providedFields":"[[]]"}
 ]]></system-out>
   </testcase>
-  <testcase name="testDryRunExecution" classname="com.acme.mcp.core.tool.PowerShellToolBaseTest" time="0.116">
-    <system-out><![CDATA[{"event":"tool_execution_started","timestamp":1758318435004,"dryRun":false,"assetId":"testasset","commandCount":1,"correlationId":"testcorrelation","userId":"testuser","tool":"test.tool","commands":"[\"Get-Service\"]"}
-{"event":"tool_execution_completed","timestamp":1758318435118,"executionId":"dccaca91-9d37-4c94-a266-11fdc3e6aaa3","stdoutPreview":"DRY_RUN","success":true,"assetId":"testasset","stderrLen":0,"exitCode":0,"correlationId":"testcorrelation","userId":"testuser","tool":"test.tool","status":"SUCCESS","stdoutLen":7}
+  <testcase name="testDryRunExecution" classname="com.acme.mcp.core.tool.PowerShellToolBaseTest" time="0.123">
+    <system-out><![CDATA[{"event":"tool_execution_started","timestamp":1758318622278,"dryRun":false,"assetId":"testasset","commandCount":1,"correlationId":"testcorrelation","userId":"testuser","tool":"test.tool","commands":"[\"Get-Service\"]"}
+{"event":"tool_execution_completed","timestamp":1758318622399,"executionId":"c6fa1a39-0bd3-438e-89c7-b52369fb04f4","stdoutPreview":"DRY_RUN","assetId":"testasset","success":true,"stderrLen":0,"exitCode":0,"correlationId":"testcorrelation","userId":"testuser","tool":"test.tool","stdoutLen":7,"status":"SUCCESS"}
 ]]></system-out>
   </testcase>
-  <testcase name="testBlockedCommand" classname="com.acme.mcp.core.tool.PowerShellToolBaseTest" time="0.002">
-    <system-out><![CDATA[{"event":"tool_execution_blocked","timestamp":1758318435121,"command":"format C:","tool":"test.tool"}
+  <testcase name="testBlockedCommand" classname="com.acme.mcp.core.tool.PowerShellToolBaseTest" time="0.003">
+    <system-out><![CDATA[{"event":"tool_execution_blocked","timestamp":1758318622401,"command":"format C:","tool":"test.tool"}
 ]]></system-out>
   </testcase>
 </testsuite>

@@ -34,8 +34,8 @@ class WindowsStarterPackTest {
             assertNotNull(registry.get(alias), "Alias should be registered: " + alias);
         }
         
-        // Verify total count (8 tools + 1 alias = 9 registrations)
-        assertEquals(9, registry.size());
+        // Verify total count (9 tools + 1 alias = 10 registrations)
+        assertEquals(10, registry.size());
     }
     
     @Test
@@ -43,10 +43,11 @@ class WindowsStarterPackTest {
         String[] toolNames = WindowsStarterPack.getToolNames();
         
         assertNotNull(toolNames);
-        assertEquals(8, toolNames.length);
+        assertEquals(9, toolNames.length);
         
         // Verify specific tools are included
         assertTrue(java.util.Arrays.asList(toolNames).contains("system.reset_network"));
+        assertTrue(java.util.Arrays.asList(toolNames).contains("system.list_services"));
         assertTrue(java.util.Arrays.asList(toolNames).contains("apps.install"));
         assertTrue(java.util.Arrays.asList(toolNames).contains("security.quick_scan_defender"));
         assertTrue(java.util.Arrays.asList(toolNames).contains("files.backup_user_docs"));

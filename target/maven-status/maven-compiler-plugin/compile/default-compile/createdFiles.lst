@@ -12,6 +12,7 @@ com\acme\mcp\core\schema\JsonSchemas.class
 com\acme\mcp\core\tool\ToolRegistry.class
 com\acme\mcp\core\tools\AppsRepairTeamsTool.class
 com\acme\mcp\core\tools\SystemClearTempTool.class
+com\acme\mcp\core\tools\SystemListServicesTool.class
 com\acme\mcp\core\windows\PowerShellRunner.class
 com\acme\mcp\core\audit\AuditLogger.class
 com\acme\mcp\core\tools\SystemRestartServiceTool.class

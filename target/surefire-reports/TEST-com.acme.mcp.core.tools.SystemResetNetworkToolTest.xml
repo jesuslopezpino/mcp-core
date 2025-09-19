@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.acme.mcp.core.tools.SystemResetNetworkToolTest" time="0.017" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.acme.mcp.core.tools.SystemResetNetworkToolTest" time="0.013" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\jesus\AppData\Local\Temp\surefire9159541231161069267\surefirebooter-20250919031110753_3.jar C:\Users\jesus\AppData\Local\Temp\surefire9159541231161069267 2025-09-19T03-11-10_405-jvmRun1 surefire-20250919031110753_1tmp surefire_0-20250919031110753_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\jesus\AppData\Local\Temp\surefire18443777812835675875\surefirebooter-20250919234712898_3.jar C:\Users\jesus\AppData\Local\Temp\surefire18443777812835675875 2025-09-19T23-47-12_341-jvmRun1 surefire-20250919234712898_1tmp surefire_0-20250919234712898_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\jesus\CursorProjects\mcp-core\target\test-classes;C:\Users\jesus\CursorProjects\mcp-core\target\classes;C:\Users\jesus\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.16.1\jackson-databind-2.16.1.jar;C:\Users\jesus\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.16.1\jackson-annotations-2.16.1.jar;C:\Users\jesus\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.16.1\jackson-core-2.16.1.jar;C:\Users\jesus\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\jesus\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\jesus\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\jesus\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\jesus\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.1\junit-jupiter-5.10.1.jar;C:\Users\jesus\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.1\junit-jupiter-api-5.10.1.jar;C:\Users\jesus\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\jesus\.m2\repository\org\junit\platform\junit-platform-commons\1.10.1\junit-platform-commons-1.10.1.jar;C:\Users\jesus\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\jesus\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.1\junit-jupiter-params-5.10.1.jar;C:\Users\jesus\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.1\junit-jupiter-engine-5.10.1.jar;C:\Users\jesus\.m2\repository\org\junit\platform\junit-platform-engine\1.10.1\junit-platform-engine-1.10.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\jesus\AppData\Local\Temp\surefire9159541231161069267\surefirebooter-20250919031110753_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\jesus\AppData\Local\Temp\surefire18443777812835675875\surefirebooter-20250919234712898_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.11+7-LTS-207"/>
@@ -56,12 +56,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testExecute" classname="com.acme.mcp.core.tools.SystemResetNetworkToolTest" time="0.007">
-    <system-out><![CDATA[{"event":"tool_execution_started","timestamp":1758244273243,"dryRun":false,"assetId":"testasset","commandCount":3,"correlationId":"testcorrelation","userId":"testuser","commands":"[\"ipconfig /flushdns\",\"netsh winsock reset\",\"netsh int ip reset\"]","tool":"system.reset_network"}
-{"event":"tool_execution_completed","timestamp":1758244273246,"executionId":"200a2e48-d653-4a34-ba42-7b197611bfae","stdoutPreview":"DRY_RUN","success":true,"assetId":"testasset","exitCode":0,"stderrLen":0,"correlationId":"testcorrelation","userId":"testuser","tool":"system.reset_network","status":"SUCCESS","stdoutLen":7}
+  <testcase name="testExecute" classname="com.acme.mcp.core.tools.SystemResetNetworkToolTest" time="0.004">
+    <system-out><![CDATA[{"event":"tool_execution_started","timestamp":1758318435206,"dryRun":false,"assetId":"testasset","commandCount":3,"correlationId":"testcorrelation","userId":"testuser","tool":"system.reset_network","commands":"[\"ipconfig /flushdns\",\"netsh winsock reset\",\"netsh int ip reset\"]"}
+{"event":"tool_execution_completed","timestamp":1758318435207,"executionId":"df13c3f7-3ddc-4b09-a203-ba3aa89d3acc","stdoutPreview":"DRY_RUN","success":true,"assetId":"testasset","stderrLen":0,"exitCode":0,"correlationId":"testcorrelation","userId":"testuser","tool":"system.reset_network","status":"SUCCESS","stdoutLen":7}
 ]]></system-out>
   </testcase>
   <testcase name="testAliases" classname="com.acme.mcp.core.tools.SystemResetNetworkToolTest" time="0.001"/>
-  <testcase name="testToolProperties" classname="com.acme.mcp.core.tools.SystemResetNetworkToolTest" time="0.001"/>
-  <testcase name="testJsonSchema" classname="com.acme.mcp.core.tools.SystemResetNetworkToolTest" time="0.001"/>
+  <testcase name="testToolProperties" classname="com.acme.mcp.core.tools.SystemResetNetworkToolTest" time="0.002"/>
+  <testcase name="testJsonSchema" classname="com.acme.mcp.core.tools.SystemResetNetworkToolTest" time="0.003"/>
 </testsuite>

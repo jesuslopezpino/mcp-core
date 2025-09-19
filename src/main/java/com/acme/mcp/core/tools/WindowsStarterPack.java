@@ -18,6 +18,7 @@ public class WindowsStarterPack {
         // System tools
         registry.register(new SystemResetNetworkTool());
         registry.register(new SystemRestartServiceTool());
+        registry.register(new SystemListServicesTool());
         registry.register(new SystemClearTempTool());
         
         // Application tools
@@ -42,6 +43,7 @@ public class WindowsStarterPack {
         // System tools
         registry.register(new SystemResetNetworkTool(powerShellRunner, allowlist));
         registry.register(new SystemRestartServiceTool(powerShellRunner, allowlist));
+        registry.register(new SystemListServicesTool(powerShellRunner, allowlist));
         registry.register(new SystemClearTempTool(powerShellRunner, allowlist));
         
         // Application tools
@@ -63,7 +65,8 @@ public class WindowsStarterPack {
     public static String[] getToolNames() {
         return new String[]{
             "system.reset_network",
-            "system.restart_service", 
+            "system.restart_service",
+            "system.list_services", 
             "system.clear_temp",
             "apps.install",
             "apps.repair_teams",

@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.acme.mcp.core.tool.PowerShellToolBaseTest
--------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.837 s -- in com.acme.mcp.core.tool.PowerShellToolBaseTest
